@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+        <title>Resume - Tony deCatanzaro</title>
+        <style type="text/css">
+            .resume-container {
+                width: 800px;
+                padding: 40px 50px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #F8F8F8;
+                border-top: 6px solid #BBB;
+                border-bottom: 6px solid #BBB;
+            }
+
+            .section {
+                padding-top: 16px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #BBB;
+            }
+
+            .section__contact-info {
+                float: right;
+                margin-top: 16px;
+                text-align: right;
+            }
+
+            .section:first-child {
+                padding-top: 0px;
+            }
+
+            p, h1, h2, h3, h4 {
+                margin: 0;
+                font-weight: normal;
+            }
+
+            * {
+                font-size: 15px;
+                font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: inherit;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            h1 {
+                font-size: 29px;
+                font-weight: bold;
+            }
+
+            h2 {
+                font-size: 18px;
+                font-style: italic;
+            }
+
+            h3 {
+                font-size: 21px;
+                font-style: italic;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .section__date {
+                display: block;
+                font-style: italic;
+                font-size: 12px;
+                margin-bottom: 3px;
+            }
+
+            .section__title {
+                display: inline-block;
+                vertical-align: top;
+                width: 130px;
+                padding-right: 20px;
+                float: left;
+            }
+
+            .section__content {
+                width: 650px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .section__content ul {
+                padding-left: 0;
+                margin-top: 3px;
+            }
+
+            .section__content ul:last-child {
+                margin-bottom: 0;
+            }
+
+            li {
+                margin-bottom: 3px;
+            }
+
+            li:last-child {
+                margin-bottom: 0;
+            }
+
+            .section-column {
+                display: inline-block;
+                vertical-align: top;
+                width: 200px;
+                margin-right: 20px;
+            }
+
+            .section-column:last-child {
+                margin-right: 0;
+            }
+
+            .bottom {
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+        <style type="text/css" media="print">
+            .resume-container {
+                margin-top: -3px;
+                padding: 0;
+                background-color: white;
+                border-top: none;
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="resume-container">
+            <header class="section">
+                <div class="section__contact-info">
+                    <a href="mailto:tony@decat.ca">tony@decat.ca</a><br/>
+                    <!-- Contact Information Removed -->
+                </div>
+                <h1>Tony deCatanzaro</h1>
+                <h2>Software Engineer</h2>
+            </header>
+            <section class="section">
+                <div class="section__title">
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="section__content">
+                    <h4>Inkling</h4>
+                    <div class="section__date">San Francisco, California (September 2013 - October 2015)</div>
+                    <ul>
+                        <li>
+                            Co-led development of a Node.js/Backbone.js app for sharing and reviewing documents on Inkling's platform. Converted app to run in docker for local development and production.
+                        </li>
+                        <li>
+                            Worked with a small team to develop an ES6, React, Flux and Node.js based user management app from inception to production.
+                        </li>
+                        <li>
+                            Wrote and enhanced several RESTful resources in Inkling's core Python/Postgres/Redis-based API, some of which handle hundreds of thousands of requests per day.
+                        </li>
+                        <li>
+                            Developed a system to automatically run scheduled imports of users and metadata; scaled it to work for imports with hundreds of thousands of entries.
+                        </li>
+                        <li>
+                            All code was thoroughly unit tested.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__title">
+                    <h3>Projects</h3>
+                </div>
+                <div class="section__content">
+                    <h4><a href="http://jetmapper.com">JetMapper.com</a></h4>
+                    <div class="section__date">While traveling in Europe (January - April 2016)</div>
+                    <ul>
+                        <li>
+                            Developed a web app for mapping all direct flights from any airport. Front end is written in ES6, React, and Redux and uses the Google Maps JavaScript API; back end is written in Node.js, Express and SQLite.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__title">
+                    <h3>Internships</h3>
+                </div>
+                <div class="section__content">
+                    <h4>Facebook</h4>
+                    <div class="section__date">Seattle, Washington (September - December 2012)</div>
+                    <ul>
+                        <li>
+                            Used Objective C and Java to develop the Like button for Facebook's iOS and Android SDKs.
+                        </li>
+                    </ul>
+                    <h4>Inkling</h4>
+                    <div class="section__date">San Francisco, California (January - April 2012)</div>
+                    <ul>
+                        <li>
+                            Contributed several major features to a JavaScript/Backbone.js web app. Optimized site layout to provide a significant rendering performance improvement. Every code push included unit tests.
+                        </li>
+                    </ul>
+                    <h4>Ontario Institute for Cancer Research</h4>
+                    <div class="section__date">Toronto, Ontario (September - December 2010)</div>
+                    <ul>
+                        <li>
+                            Enhanced a JavaScript and Perl-based web app to preload data to the client, providing a 2x perceived performance improvement. Refactored JavaScript code to reduce dependencies on external frameworks. Presented a poster at a major conference.
+                        </li>
+                    </ul>
+                    <h4>Trapeze Software Group</h4>
+                    <div class="section__date">Mississauga, Ontario (May - August 2009 & January - April 2010)</div>
+                    <ul>
+                        <li>
+                            Helped introduce unit testing to a large web app. Developed and shipped a JavaScript/C++ extension to a major client. Automated a version migration system to save employee time.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__title">
+                    <h3>Buzzwords</h3>
+                </div>
+                <div class="section-column">
+                    JavaScript / ES6<br/>
+                    Node.js<br/>
+                    React
+                </div>
+                <div class="section-column">
+                    Flux / Redux<br/>
+                    CSS3 & HTML5<br/>
+                    Backbone.js
+                </div>
+                <div class="section-column">
+                    Python<br/>
+                    Django<br/>
+                    Git
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__title">
+                    <h3>Education</h3>
+                </div>
+                <div class="section__content">
+                    <h4>University of Waterloo</h4>
+                    <div class="section__date">Waterloo, Ontario (September 2008 - April 2013)</div>
+                    <p>
+                        Honours Bachelor of Computer Science, With Distinction
+                    </p>
+                </div>
+            </section>
+            <footer class="bottom">
+                <!-- Contact Information Removed --><a href="http://www.decat.ca">www.decat.ca</a>
+            </footer>
+        </div>
+    </body>
+</html>

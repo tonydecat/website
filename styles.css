@@ -7,8 +7,8 @@ html body {
 }
 
 header {
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 h1, h2 {
@@ -20,6 +20,9 @@ h2 {
     font-size: 1.4em;
 }
 
+h3 {
+    margin-top: 36px;
+}
 
 .project-list {
     width: 100%;
@@ -57,10 +60,6 @@ a.project-list__item {
     transform: translate3d(0, 0, 0);
 }
 
-.project-list__item:hover {
-    cursor: pointer;
-}
-
 .project-list__item::before {
     content: '';
     display: block;
@@ -69,13 +68,17 @@ a.project-list__item {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #222;
+    background-color: #FFF;
     opacity: 0;
     transition: opacity 0.1s;
 }
 
+.project-list__item:hover {
+    cursor: pointer;
+}
+
 .project-list__item:hover::before {
-    opacity: 0.25;
+    opacity: 0.2;
 }
 
 .project-list__item-title {
@@ -94,7 +97,19 @@ a.project-list__item {
     opacity: 1;
 }
 
+/* Get rid of hover state and always show labels on small devices. */
+@media (max-width: 920px) {
+    .project-list__item:hover::before {
+        opacity: 0;
+    }
+
+    .project-list__item-title {
+        bottom: -25px;
+        opacity: 1;
+    }
+}
+
 footer {
-    margin-top: 6%;
+    margin-top: 5%;
     margin-bottom: 8%;
 }

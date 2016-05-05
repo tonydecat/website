@@ -7,8 +7,8 @@ html body {
 }
 
 header {
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 h1, h2 {
@@ -21,7 +21,16 @@ h2 {
 }
 
 h3 {
-    margin-top: 36px;
+    margin-top: 30px;
+}
+
+.super-meta-list-of-lists {
+    width: 100%;
+}
+
+.super-meta-list-of-lists__item {
+    display: inline-block;
+    margin: 0 30px;
 }
 
 .project-list {
@@ -110,6 +119,6 @@ a.project-list__item {
 }
 
 footer {
-    margin-top: 5%;
-    margin-bottom: 8%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }

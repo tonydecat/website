@@ -33,6 +33,13 @@ h3 {
     margin: 0 30px;
 }
 
+/* Remove margins when there's just single column. */
+@media (max-width: 400px) {
+    .super-meta-list-of-lists__item {
+        margin: 0;
+    }
+}
+
 .project-list {
     width: 100%;
     margin-left: auto;
